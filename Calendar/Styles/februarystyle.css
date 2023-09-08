@@ -13,6 +13,46 @@
     }
 }
 
+.NavBtns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px 0 0; 
+}
+
+.BackBtn {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    min-height: 60px;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 20px;
+    margin-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  }
+  
+  .BackBtn:hover {
+    color: #fff;
+    background-color: #403b6e;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .BackBtn:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
 html, body, div, h1, table, tr, th, td {
     margin: 0;
     padding: 0;
