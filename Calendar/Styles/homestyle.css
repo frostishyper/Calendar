@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/Calendar/Images/BG.jpg');
+    background-size: cover;
+}
+
+.Start-Btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: transparent;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px; 
+    padding: 10px 20px; 
+    margin-top: 150px;
+    width: 300px;
+    height: 75px;
+    background-color: white ;
+    opacity: 80%;
+    font-weight: bold;
+
+}
+
+.Start-Btn:hover {
+    background: linear-gradient(#00B0F0,50%,#002060);
+    color: white;
+    
+}
