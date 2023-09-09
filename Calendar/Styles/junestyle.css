@@ -40,10 +40,10 @@
     margin-left: 40px;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   }
-
+  
   .BackBtn:hover {
     color: #fff;
-    background-color: #DB55AF;
+    background-color: #69cef0;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
   }
@@ -59,12 +59,13 @@ html, body, div, h1, table, tr, th, td {
 }
 
 html, body {
-    background-color: #48487D;
+    background: radial-gradient(#39425f,30%,#35405c)
 }
 
 .Calendar-Container {
     display: flex;
     align-items: flex-start;
+    min-height: 100vh;
     margin-left: 40px;
 }
 
@@ -77,7 +78,10 @@ html, body {
 }
 
 .Month-Name {
-    color: #DB55AF;
+    color: #69cef0;
+    background: radial-gradient(circle, #ffb9e1, #ffc8d3);
+    background-clip: text;
+    -webkit-background-clip: text;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 80px;
     margin-top: 30px;
@@ -87,23 +91,21 @@ html, body {
 .Calendar-Table {
     width: 1200px; 
     height: 1000px;
-    background-color: transparent;
-    background-image: radial-gradient( #e3e2eb,20% , #fcfcf9);
+    background-color: #eeecf6;
     border-collapse: collapse;
     text-align: center;
+    margin: 0 auto; 
     margin-bottom: 80px;
     padding: 15px;
     box-shadow: 10px 0 15px rgba(0, 0, 0, 0.5);
-    flex: 1;
 }
 
 .Calendar-Days {
-    color: #DB55AF;
-    background-color: #52D3EA;
+    color: #69cef0;
+    background-color: #b22a53;
     padding: 10px;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
-   
 }
 
 .Calendar-Days th {
@@ -112,10 +114,14 @@ html, body {
     
 }
 
+.Sunday {
+    color: #b22a53;
+}
+
 .Calendar-Dates {
     border: 1px solid #ccc;
     padding: 10px;
-    color: #0a0404;
+    color: #6b6382;
 }
 
 .Calendar-Dates td {
@@ -123,15 +129,6 @@ html, body {
     padding: 10px;
     font-size: 30px;
     font-weight: 500;
-    color: #48487D;
-}
-
-.Calendar-Dates td.Sunday {
-    border: 1px solid #ccc;
-    padding: 10px;
-    font-size: 30px;
-    font-weight: 500;
-    color: #DB55AF;
 }
 
 .Calendar-Dates td:hover {
@@ -145,6 +142,8 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 50px;
+    height: 100%; 
 }
 
 .Side-Panel img {
