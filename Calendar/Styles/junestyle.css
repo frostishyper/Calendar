@@ -143,6 +143,7 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 50px;
+    padding-top: 180px;
     height: 100%; 
 }
 
