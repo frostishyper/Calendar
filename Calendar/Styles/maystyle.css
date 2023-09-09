@@ -142,7 +142,6 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 150px;
     height: 100%; 
 }
 
