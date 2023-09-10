@@ -188,6 +188,14 @@ html, body {
     transition: background-color 0.3s ease;
 }
 
+.Note-Header {
+    font-size: 25px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1F3C40;
+}
+
 .Save-Note-Btn:hover {
     background-color: #5fb6bd;
 }

@@ -180,6 +180,14 @@ html, body {
     font-size: 20px;
 }
 
+.Note-Header {
+    font-size: 25px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6b6382;
+}
+
 .Save-Note-Btn {
     background-color: #b22a53;
     color: #fff;
