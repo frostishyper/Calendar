@@ -5,27 +5,12 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-    function markDatesWithNotes(month) {
-        const markedDays = document.querySelectorAll('.Calendar-Dates td');
-        markedDays.forEach(function (dayElement) {
-            const day = dayElement.textContent;
-            const note = localStorage.getItem(`note-${month}-${day}`);
-            if (note) {
-                dayElement.classList.add('has-note');
-            }
-        });
-    }
-
-    // Get the unique identifier for the current month
-    const monthNameElement = document.querySelector('.Month-Name');
-    const month = monthNameElement.getAttribute('data-month');
-
-    markDatesWithNotes(month);
-
     const calendarDates = document.querySelectorAll('.Calendar-Dates td');
 
     calendarDates.forEach(function (date) {
         date.addEventListener('click', function () {
+            const monthNameElement = document.querySelector('.Month-Name');
+            const month = monthNameElement.getAttribute('data-month');
             const day = date.textContent;
             showNoteInterface(month, day);
         });
@@ -39,9 +24,12 @@ function ready() {
         const existingNote = localStorage.getItem(`note-${month}-${day}`);
         noteText.value = existingNote || '';
 
+        const monthNameElement = document.querySelector('.Month-Name');
+        const currentMonth = monthNameElement.getAttribute('data-month');
+        document.querySelector('.Note-Header').textContent = `${currentMonth} ${day}`;
+
         saveButton.onclick = () => {
             saveNote(month, day);
-            markDatesWithNotes(month);
         };
 
         noteContainer.style.display = 'block';
@@ -56,4 +44,3 @@ function ready() {
         noteContainer.style.display = 'none';
     }
 }
-
