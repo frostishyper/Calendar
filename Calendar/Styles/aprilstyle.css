@@ -153,3 +153,40 @@ html, body {
     width: auto;
     height: auto;
 }
+
+.Note-Body {
+    display: none;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 400px; 
+    background-color: #5b6578;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+    padding: 10px;
+}
+
+.Note-Content {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+.Save-Note-Btn {
+    background-color: #d0ffe7;
+    color: #333242;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Save-Note-Btn:hover {
+    background-color: #9fffda;
+}

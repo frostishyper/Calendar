@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/Calendar/Scripts/mayscript.js" async></script>
         <link rel="stylesheet" href="/Calendar/Styles/maystyle.css">
         <title>May</title>
     </head>
@@ -13,7 +14,7 @@
         </div>
         <div class="Calendar-Container">
             <div class="Calendar-Cotent">
-            <h1 class="Month-Name">May 2023</h1>
+            <h1 class="Month-Name"  data-month="may">May 2023</h1>
                 <table class="Calendar-Table">
                     <tr class="Calendar-Days">
                         <th>Sun</th>
@@ -70,6 +71,10 @@
                         <td></td>
                     </tr>
                 </table>
+                <div class="Note-Body" id="note-container" style="display: none;">
+                    <textarea class="Note-Content" id="note-text"></textarea>
+                    <button class="Save-Note-Btn" id="save-note">Save</button>
+                </div>
             </div>
             <div class="Side-Panel">
                 <img src="/Calendar/Images/Kirara.png" alt="Kirara Image">
