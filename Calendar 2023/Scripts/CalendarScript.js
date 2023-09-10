@@ -24,7 +24,6 @@ function ready() {
         const existingNote = localStorage.getItem(`note-${month}-${day}`);
         noteText.value = existingNote || '';
 
-        // Update the note interface header with the current month and day
         const monthNameElement = document.querySelector('.Month-Name');
         const currentMonth = monthNameElement.getAttribute('data-month');
         document.querySelector('.Note-Header').textContent = `${currentMonth} ${day}`;
