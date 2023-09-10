@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../Images/BG.jpg');
+    background-size: cover;
+}
+
+.Start-Btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: transparent;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px; 
+    padding: 10px 20px; 
+    margin-top: 150px;
+    width: 300px;
+    height: 75px;
+    background-color: white ;
+    opacity: 80%;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+.Start-Btn:hover {
+    background: linear-gradient(#00B0F0,50%,#002060);
+    color: white;
+    
+}
+
+.Note-Body {
+    display: none;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 400px; 
+    background-color: #fff;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+    padding: 10px;
+}
+
