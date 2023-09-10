@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('/Calendar/Images/BG.jpg');
+    background-image: url('../Images/BG.jpg');
     background-size: cover;
 }
 
